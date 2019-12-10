@@ -16,11 +16,12 @@ let indexArray = []
 
 // Create a array with basic data (houseId) on related index(houseId).
 rawArray.forEach(i => {
-  indexArray[i.houseId] = { houseId: i.houseId, src: [] }
+  indexArray[i.houseId] = { houseId: '', src: [] }
 })
 
 // Push data into targeted index (houseId)
 rawArray.forEach(i => {
+  indexArray[i.houseId].houseId = i.houseId
   indexArray[i.houseId].src.push(i.src)
 })
 
