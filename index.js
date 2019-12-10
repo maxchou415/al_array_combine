@@ -14,12 +14,12 @@ const rawArray = [{
 
 let indexArray = []
 
-// Create a array with basic data (houseId) on related index.
+// Create a array with basic data (houseId) on related index(houseId).
 rawArray.forEach(i => {
   indexArray[i.houseId] = { houseId: i.houseId, src: [] }
 })
 
-// Push data into targeted houseId
+// Push data into targeted index (houseId)
 rawArray.forEach(i => {
   indexArray[i.houseId].src.push(i.src)
 })
